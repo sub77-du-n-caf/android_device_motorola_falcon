@@ -2,17 +2,35 @@ build_root=$(pwd)
 
 # Start build
 fetch_dir='build'
-fetch_git='git@github.com:sub77-du-n-caf/android_build.git refs/tags/changes'
-echo -e ${CL_BLU}"PULLING $fetch_git"${CL_RST}
+fetch_git='https://github.com/DirtyUnicorns/android_build.git'
+fetch_branch='n-caf'
+echo -e ${CL_BLU}"PULLING $fetch_git BRANCH: $fetch_branch"${CL_RST}
 cd $build_root/$fetch_dir
-git pull $fetch_git
+git pull $fetch_git $fetch_branch
+cd $build_root
+# Start frameworks/base
+fetch_dir='frameworks/base'
+fetch_git='https://github.com/DirtyUnicorns/android_frameworks_base.git'
+fetch_branch='n'
+echo -e ${CL_BLU}"PULLING $fetch_git BRANCH: $fetch_branch"${CL_RST}
+cd $build_root/$fetch_dir
+git pull $fetch_git $fetch_branch
+cd $build_root
+# Start system/sepolicy
+fetch_dir='system/sepolicy'
+fetch_git='https://github.com/DirtyUnicorns/android_system_sepolicy.git'
+fetch_branch='n'
+echo -e ${CL_BLU}"PULLING $fetch_git BRANCH: $fetch_branch"${CL_RST}
+cd $build_root/$fetch_dir
+git pull $fetch_git $fetch_branch
 cd $build_root
 # Start vendor/du
 fetch_dir='vendor/du'
-fetch_git='git@github.com:sub77-du-n-caf/android_vendor_du.git refs/tags/changes'
-echo -e ${CL_BLU}"PULLING $fetch_git"${CL_RST}
+fetch_git='https://github.com/DirtyUnicorns/android_vendor_du.git'
+fetch_branch='n'
+echo -e ${CL_BLU}"PULLING $fetch_git BRANCH: $fetch_branch"${CL_RST}
 cd $build_root/$fetch_dir
-git pull $fetch_git
+git pull $fetch_git $fetch_branch
 cd $build_root
 # End
 
