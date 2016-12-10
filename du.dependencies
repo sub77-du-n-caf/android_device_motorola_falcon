@@ -2,37 +2,31 @@
   {
     "repository":   "sub77-du-n-caf/android_device_motorola_msm8226-common",
     "target_path":  "device/motorola/msm8226-common",
-    "branch":       "n-caf"
+    "branch":       "n7x-caf"
   },
   {
-    "repository":   "sub77-du-n-caf/android_kernel_motorola_msm8226",
+    "repository":   "CyanogenMod/android_kernel_motorola_msm8226",
     "target_path":  "kernel/motorola/msm8226",
-    "branch":       "n-caf"
+    "branch":       "cm-14.1"
   },
   {
-    "repository":   "sub77-du-n-caf/android_vendor_motorola",
+    "repository":   "CyanogenMod/android_packages_resources_devicesettings",
+    "target_path":  "packages/resources/devicesettings",
+    "branch":       "cm-14.1"
+  },
+  {
+    "repository":   "TheMuppets/proprietary_vendor_motorola",
     "target_path":  "vendor/motorola",
-    "branch":       "n-caf"
+    "branch":       "cm-14.1"
   },
   {
-    "repository":   "DirtyUnicorns/android_system_qcom",
-    "target_path":  "system/qcom",
-    "branch":       "n-caf"
-  },
-
-  {
-    "repository":   "DirtyUnicorns/android_vendor_qcom_binaries",
+    "repository":   "TheMuppets/proprietary_vendor_qcom_binaries",
     "target_path":  "vendor/qcom/binaries",
-    "branch":       "n-caf"
+    "branch":       "cm-14.1"
   },
   {
     "repository":   "DirtyUnicorns/android_system_qcom",
     "target_path":  "system/qcom",
-    "branch":       "n-caf"
-  },
-  {
-    "repository":   "DirtyUnicorns/android_external_bson",
-    "target_path":  "external/bson",
     "branch":       "n-caf"
   },
   {
@@ -66,23 +60,18 @@
     "branch":       "n-caf"
   },
   {
-    "repository":   "DirtyUnicorns/android_hardware_qcom_audio",
+    "repository":   "CyanogenMod/android_hardware_qcom_audio",
     "target_path":  "hardware/qcom/audio-caf/msm8974",
-    "branch":       "n-caf-8974"
+    "branch":       "cm-14.1-caf-8974"
   },
   {
-    "repository":   "DirtyUnicorns/android_hardware_qcom_display",
+    "repository":   "CyanogenMod/android_hardware_qcom_display",
     "target_path":  "hardware/qcom/display-caf/msm8974",
-    "branch":       "n-caf-8974"
+    "branch":       "cm-14.1-caf-8974"
   },
   {
-    "repository":   "DirtyUnicorns/android_hardware_qcom_media",
+    "repository":   "CyanogenMod/android_hardware_qcom_media",
     "target_path":  "hardware/qcom/media-caf/msm8974",
-    "branch":       "n-caf-8974"
-  },
-  {
-    "repository":   "CyanogenMod/android_packages_apps_Snap",
-    "target_path":  "packages/apps/Snap",
-    "branch":       "cm-14.1"
+    "branch":       "cm-14.1-caf-8974"
   }
 ]
