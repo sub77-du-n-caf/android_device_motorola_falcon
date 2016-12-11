@@ -1,17 +1,16 @@
-From d7c6117d49d3575cccd1db987c25e96ae404a184 Mon Sep 17 00:00:00 2001
-From: LuK1337 <priv.luk@gmail.com>
-Date: Tue, 25 Oct 2016 23:26:12 +0200
-Subject: [PATCH] Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+From 6d9a9c1af00cbac49f8c75e3afcd55bcd2fc303b Mon Sep 17 00:00:00 2001
+From: sub77 <sub77@ymail.com>
+Date: Sun, 11 Dec 2016 07:05:58 +0000
+Subject: [PATCH 2/2] Allow legacycam hal1
 
-Change-Id: Ica4926fa3acf88b95c687f25eec4dbc68ea41fbb
-Signed-off-by: sub77 <sub77@ymail.com>
+Change-Id: I8617a98c202120cb3bede2494c0eeb6c1c9acf52
 ---
  Android.mk     | 1 +
  mediaserver.te | 6 ++++++
  2 files changed, 7 insertions(+)
 
 diff --git a/Android.mk b/Android.mk
-index e4d3c66..32b59a0 100644
+index 2b8cdeb..633ab57 100644
 --- a/Android.mk
 +++ b/Android.mk
 @@ -95,6 +95,7 @@ $(sepolicy_policy.conf): $(call build_policy, $(sepolicy_build_files))
@@ -39,3 +38,6 @@ index 5fbaa30..dc05e14 100644
  # /oem access
  allow mediaserver oemfs:dir search;
  allow mediaserver oemfs:file r_file_perms;
+-- 
+2.1.4
+
